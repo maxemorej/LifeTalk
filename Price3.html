@@ -34,6 +34,11 @@
             color: #333;
             font-size: 2rem;
             margin-bottom: 20px;
+            text-align: center;
+        }
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
         .section ul {
             margin: 20px 0;
@@ -42,57 +47,45 @@
             margin: 10px 0;
             font-size: 1.2rem;
         }
-        .cta-button {
+        .cta-button, .back-button {
             background-color: #28a745;
             color: white;
-            padding: 10px 20px;
-            font-size: 1.5rem;
+            padding: 12px 25px;
+            font-size: 1.3rem;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
             margin-top: 20px;
             text-align: center;
+            width: 100%;
+            box-sizing: border-box;
         }
-        .cta-button:hover {
+        .cta-button:hover, .back-button:hover {
             background-color: #218838;
         }
         .back-button {
             background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .back-button:hover {
-            background-color: #0056b3;
+            margin-top: 10px;
         }
 
         /* Responsive Styles */
         @media screen and (max-width: 768px) {
             .container {
-                width: 100%;
+                width: 95%;
                 padding: 0 20px;
             }
             .section {
                 padding: 15px;
             }
             .section h2 {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
             .section ul li {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
-            .cta-button {
+            .cta-button, .back-button {
                 font-size: 1.2rem;
-                padding: 12px 18px;
-            }
-            .back-button {
-                font-size: 1.2rem;
-                padding: 12px 18px;
+                padding: 10px 20px;
             }
         }
 
