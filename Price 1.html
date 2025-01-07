@@ -14,8 +14,9 @@
             padding: 0;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto;
             overflow: hidden;
         }
         header img {
@@ -25,32 +26,37 @@
         }
         .section {
             background-color: #fff;
-            margin: 30px 0;
-            padding: 30px;
+            margin: 20px 0;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
             color: #333;
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .section ul {
-            margin: 20px 0;
+        .section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
         }
         .section ul li {
             margin: 10px 0;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         .cta-button {
             background-color: #28a745;
             color: white;
             padding: 10px 20px;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             text-align: center;
         }
         .cta-button:hover {
@@ -60,15 +66,49 @@
             background-color: #007bff;
             color: white;
             padding: 10px 20px;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             text-align: center;
+            border: none;
+            cursor: pointer;
         }
         .back-button:hover {
             background-color: #0056b3;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            .section h3 {
+                font-size: 1.3rem;
+            }
+            .section p,
+            .section ul li {
+                font-size: 0.9rem;
+            }
+            .cta-button, .back-button {
+                font-size: 1.1rem;
+                padding: 8px 15px;
+            }
+        }
+
+        /* Adjustments for Extra Large Screens */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1000px;
+            }
         }
     </style>
 </head>
@@ -93,12 +133,12 @@
 
             <h3>Perfect for:</h3>
             <ul>
-                <li>🔹 Individuals Seeking Clarity on a Specific Challenge or Goal: Whether it’s a career decision, relationship concern, or personal goal, this session is designed to help you find direction.</li>
-                <li>🔹 Anyone Feeling Stuck or Overwhelmed: If you’re unsure of your next steps or feeling lost, this is the perfect starting point to gain clarity and confidence.</li>
-                <li>🔹 People Navigating Transitions: Facing a big life change? This session will help you align your decisions with your purpose and priorities.</li>
-                <li>🔹 Goal-Setters Who Need Focus: If you’ve got big dreams but don’t know where to start, we’ll break them down into actionable steps.</li>
-                <li>🔹 Busy Individuals Craving a Clear Plan: Life’s overwhelming, but this session can bring structure and balance to your schedule.</li>
-                <li>🔹 Anyone Who Wants a Fresh Perspective: Sometimes, all it takes is an outside perspective to spark fresh ideas and solutions.</li>
+                <li>🔹 Individuals Seeking Clarity on a Specific Challenge or Goal.</li>
+                <li>🔹 Anyone Feeling Stuck or Overwhelmed.</li>
+                <li>🔹 People Navigating Transitions.</li>
+                <li>🔹 Goal-Setters Who Need Focus.</li>
+                <li>🔹 Busy Individuals Craving a Clear Plan.</li>
+                <li>🔹 Anyone Who Wants a Fresh Perspective.</li>
             </ul>
 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSejt2dHCFRE3CM-OBhJo48A7EKmrdCJpILGxUrjn8iEbeWuww/viewform?usp=header" class="cta-button">Take the First Step to Clarity – Start Now!</a>
